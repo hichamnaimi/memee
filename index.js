@@ -22,7 +22,7 @@ const memee = (callback, {maxAge} = 0) => {
     const concernedTimeout = queueOfCleaners.splice(0, 1)[0].value;
     delete cache[concernedTimeout];
   }
-  
+
   return (...funcArgs) => {
     args = funcArgs.length ? [...funcArgs] : 'none';
     if (!cache[`${name+args}`]) {
@@ -32,4 +32,4 @@ const memee = (callback, {maxAge} = 0) => {
   };
 }
 
-export default memee;
+module.exports = memee;
