@@ -1,0 +1,28 @@
+{
+  "name": "memee",
+  "version": "1.0.0",
+  "description": "Javascript package for memoizing functions. Returning directly the result of function if it was called with the same arguments avoiding it's redundant work.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "memoizing",
+    "javascript",
+    "functions",
+    "memorizing",
+    "javascript",
+    "functions",
+    "optimize",
+    "javascript",
+    "functions",
+    "functions",
+    "optimize"
+  ],
+  "author": {
+    "name": "Hicham NAIMI",
+    "email": "hicham.naimi.hn@gmail.com"
+  },
+  "license": "MIT"
+}
