@@ -1,4 +1,4 @@
-const memee = (callback, {maxAge} = 0) => {
+export default memee = (callback, {maxAge} = 0) => {
   let cache = {};
   const queueOfCleaners = [];
   let timeout = null;
@@ -33,8 +33,6 @@ const memee = (callback, {maxAge} = 0) => {
 }
 
 if (typeof exports === 'object' && typeof exports.nodeName !== 'string') {
-  module.exports = md5;
+  module.exports = memee;
   return '';
 }
-
-export default memee;
