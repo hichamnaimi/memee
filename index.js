@@ -12,7 +12,7 @@ module.exports = (callback, {maxAge} = 0) => {
   }
 
   const _memorize = () => {
-    const callbackResult = callback.apply(this, args);
+    const callbackResult = callback.apply(this, [...args]);
     cache[`${name+args}`] = callbackResult ? callbackResult : true;
     _queueCleaners();
     setTimeout(_clearCache, validMaxAge);
@@ -24,7 +24,7 @@ module.exports = (callback, {maxAge} = 0) => {
   }
 
   return (...funcArgs) => {
-    args = funcArgs.length ? [...funcArgs] : ['none'];
+    args = funcArgs.length ? funcArgs : 'none';
     if (!cache[`${name+args}`]) {
       _memorize();
     }
