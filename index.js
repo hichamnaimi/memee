@@ -32,4 +32,9 @@ const memee = (callback, {maxAge} = 0) => {
   };
 }
 
-module.exports = memee;
+if (typeof exports === 'object' && typeof exports.nodeName !== 'string') {
+  module.exports = md5;
+  return '';
+}
+
+export default memee;

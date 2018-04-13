@@ -7,13 +7,13 @@ Using npm:
 
 ```
 $ npm i -g npm
-$ npm i --save lodash
+$ npm i --save memee
 ```
 
 Using meme
 
 ```javascript
-import meme from 'meme';
+import memee from 'memee';
 
 // A function that we want to memorize
 const hello = () => {
@@ -21,7 +21,7 @@ const hello = () => {
 }
 
 // Always will be memorized
-const memorizedHello = meme(hello);
+const memorizedHello = memee(hello);
 
 memorizedHello(); // will performe and return 'hello'
 memorizedHello(); // already cached, it will return directly the result 'hello
@@ -29,7 +29,7 @@ memorizedHello(); // already cached, it will return directly the result 'hello
 
 // Memorized for xxxx milliseconds
 // Maybe used to uncache the function after xxxx milliseconds (garbage collecting purpose)
-const memorizedHello = meme(hello, { maxAge: 3000 });
+const memorizedHello = memee(hello, { maxAge: 3000 });
 
 memorizedHello(); // will performe and return 'hello'
 memorizedHello(); // already cached, it will return directly the result 'hello
