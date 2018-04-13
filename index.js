@@ -24,7 +24,7 @@ module.exports = (callback, {maxAge} = 0) => {
   }
 
   return (...funcArgs) => {
-    args = funcArgs.length ? [...funcArgs] : 'none';
+    args = funcArgs.length ? [...funcArgs] : ['none'];
     if (!cache[`${name+args}`]) {
       _memorize();
     }
