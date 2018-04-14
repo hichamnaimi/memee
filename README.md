@@ -10,7 +10,7 @@ $ npm i -g npm
 $ npm i --save memee
 ```
 
-Using meme
+Using memee
 
 ```javascript
 import memee from 'memee';
@@ -34,7 +34,7 @@ const memorizedHello = memee(hello, { maxAge: 3000 });
 memorizedHello(); // will performe and return 'hello'
 memorizedHello(); // already cached, it will return directly the result 'hello
 
-// After 3000seconds
+// After 3000milliseconds(3s)
 memorizedHello(); // no longer cached, it will performe again and return 'hello'
 ```
 

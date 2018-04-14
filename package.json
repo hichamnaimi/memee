@@ -1,6 +1,6 @@
 {
   "name": "memee",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Javascript package for memoizing functions. Returning directly the result of function if it was called with the same arguments avoiding it's redundant work.",
   "main": "index.js",
   "scripts": {
@@ -9,16 +9,15 @@
   "keywords": [
     "javascript",
     "memoizing",
-    "javascript",
+    "javascript-memoizing-functions",
     "functions",
-    "memorizing",
-    "javascript",
-    "functions",
+    "javascript-cache-functions",
+    "cache",
+    "javascript-performe-functions",
+    "javascript-optimize-functions",
     "optimize",
-    "javascript",
-    "functions",
-    "functions",
-    "optimize"
+    "memee",
+    "memorize-javascript-functions"
   ],
   "author": {
     "name": "Hicham NAIMI",
