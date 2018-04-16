@@ -55,7 +55,7 @@ Debounced functions let us await the execution of a function for a defined time.
 const hello = () => 'hello';
 
 // Will recieve the returning result if the debounced function returns one.
-const callback = (res) => console.log('recupered results : ', res);
+const callback = (res) => console.log('debounce result : ', res);
 
 // We declare hello function as cached debounced function.
 const memorizedHello = memee(hello, { maxAge: 3000 },{ debounced: true, wait: 2000, result: callback });
