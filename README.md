@@ -10,7 +10,7 @@ $ npm i -g npm
 $ npm i --save memee
 ```
 
-**Using memee**
+### Using memee
 Always caching the function until we close the application.
 ```javascript
 import memee from 'memee';
@@ -26,8 +26,8 @@ const memorizedHello = memee(hello);
 memorizedHello(); // will performe and return 'hello'
 memorizedHello(); // already cached, it will return directly the result 'hello'
 ````
-***
-**MAX AGE**
+
+### Define max age for cache
 *{maxAge} option* will cache the function for a defined time, after that it will no longer exist in the cache (garbage collection purpose) . If it's called again, the function will perform and cache itself during the same duration of time.
 
 ```javascript
