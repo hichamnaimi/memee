@@ -10,8 +10,8 @@ $ npm i -g npm
 $ npm i --save memee
 ```
 
-Using memee
-
+**Using memee**
+Always caching the function until we close the application.
 ```javascript
 import memee from 'memee';
 
@@ -20,15 +20,18 @@ const hello = () => {
     return 'Hello';
 }
 
-// Always will be memorized
+// Always will be memorized, cache will be empty once the application is closed
 const memorizedHello = memee(hello);
 
 memorizedHello(); // will performe and return 'hello'
 memorizedHello(); // already cached, it will return directly the result 'hello'
+````
+***
+**MAX AGE**
+*{maxAge} option* will cache the function for a defined time, after that it will no longer exist in the cache (garbage collection purpose) . If it's called again, the function will perform and cache itself during the same duration of time.
 
-
+```javascript
 // Memorized for xxxx milliseconds
-// Maybe used to uncache the function after xxxx milliseconds (garbage collecting purpose)
 const memorizedHello = memee(hello, { maxAge: 3000 });
 
 memorizedHello(); // will performe and return 'hello'
@@ -44,8 +47,7 @@ We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
-* **Hicham NAIMI**
-for any suggestion you can contact me [HERE](mailto:hicham.naimi.hn@gmail.com)
+* **Hicham NAIMI**, for any suggestion you can contact me [HERE](mailto:hicham.naimi.hn@gmail.com)
 
 ## License
 
