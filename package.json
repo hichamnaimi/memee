@@ -9,15 +9,18 @@
   "keywords": [
     "javascript",
     "memoizing",
-    "javascript-memoizing-functions",
+    "debounce",
+    "javascript-debounce-function",
+    "javascript-memoize-function",
     "functions",
-    "javascript-cache-functions",
+    "javascript-functions",
+    "javascript-cache-function",
     "cache",
-    "javascript-performe-functions",
-    "javascript-optimize-functions",
+    "javascript-performance-function",
+    "javascript-optimize-function",
     "optimize",
     "memee",
-    "memorize-javascript-functions"
+    "memorize-javascript-function"
   ],
   "author": {
     "name": "Hicham NAIMI",
