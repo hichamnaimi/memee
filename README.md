@@ -24,7 +24,7 @@ const hello = () => {
 const memorizedHello = memee(hello);
 
 memorizedHello(); // will performe and return 'hello'
-memorizedHello(); // already cached, it will return directly the result 'hello
+memorizedHello(); // already cached, it will return directly the result 'hello'
 
 
 // Memorized for xxxx milliseconds
@@ -32,7 +32,7 @@ memorizedHello(); // already cached, it will return directly the result 'hello
 const memorizedHello = memee(hello, { maxAge: 3000 });
 
 memorizedHello(); // will performe and return 'hello'
-memorizedHello(); // already cached, it will return directly the result 'hello
+memorizedHello(); // already cached, it will return directly the result 'hello'
 
 // After 3000milliseconds(3s)
 memorizedHello(); // no longer cached, it will performe again and return 'hello'
@@ -45,7 +45,7 @@ We use [SemVer](http://semver.org/) for versioning.
 ## Authors
 
 * **Hicham NAIMI**
-For any suggestion you can contact me [HERE](mailto:hicham.naimi.hn@gmail.com)
+for any suggestion you can contact me [HERE](mailto:hicham.naimi.hn@gmail.com)
 
 ## License
 
