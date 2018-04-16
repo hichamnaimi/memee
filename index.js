@@ -32,9 +32,7 @@ const memoize = (() => {
   const _clearCache = () => {
     let { cache, queueOfCleaners } = globals.memoize;
     const concernedTimeout = queueOfCleaners.splice(0, 1)[0].value;
-    console.log('deleting cache');
     delete cache[concernedTimeout];
-    console.log('cache content: ', cache);
   }
 
   const _queueCleaners = () => {
@@ -58,7 +56,6 @@ const memoize = (() => {
     let { args } = globals;
     let { callbackName, cache } = globals.memoize;
     if (!cache[`${callbackName+args}`]) {
-    	console.log('not cached');
       _memorize();
     }
     return cache[`${callbackName+args}`];
