@@ -1,6 +1,6 @@
 {
   "name": "memee",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Javascript package for memoizing functions. Returning directly the result of function if it was called with the same arguments avoiding it's redundant work.",
   "main": "index.js",
   "scripts": {
