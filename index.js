@@ -77,6 +77,6 @@ module.exports = (callback, { maxAge = 0, debounced= false } = 0) => {
   return (...args) => {
     globals.args = args.length ? args : 'none';
     // applying memoization
-    memoize.applyMemoization();
+    return memoize.applyMemoization();
   };
 }
