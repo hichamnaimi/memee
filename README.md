@@ -29,6 +29,31 @@ memorizedHello();
 memorizedHello();
 ````
 
+### Memoizing promises
+Memee can also cache promises.
+```javascript
+let iterator = 0;
+
+// Promise we want to save in cache.
+const helloPromise = () => {
+	// we iterate for each promise work.
+	++iterator;
+	return Promise.resolve('hello ' + iterator);
+}
+
+// Caching the promise with memee.
+const memorizedHello= memee(helloPromise);
+
+// First call, perform work and cache.
+memorizedHello().then(resultA => {
+    console.log(resultA); // show hello 1.
+
+    // Second same call, already cached, returns result directly.
+    memorizedHello().then(resultB => {
+        console.log(resultB); // show hello 1, as the promise function was cached.
+    });
+});
+```
 ### Maximum age for cache
 *{maxAge} option* will cache the function for a defined time, after that it will no longer exist in the cache (garbage collection purpose) . If it's called again, the function will perform and cache itself during the same duration of time.
 
