@@ -14,7 +14,7 @@ $ npm i --save memee
 
 Always caching the function until we close the application.
 ```javascript
-import memee from 'memee';
+const memee = require("memee");
 
 // A function that we want to memorize.
 const hello = () => 'hello'; // ES6 arrow function.
