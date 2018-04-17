@@ -30,7 +30,7 @@ memorizedHello();
 ````
 
 ### Memoizing promises
-Memee can also cache promises.
+memee can also cache promises.
 ```javascript
 let iterator = 0;
 
