@@ -64,7 +64,7 @@ const memorizedHello = memee(hello, { maxAge: 3000 },{ debounced: true, wait: 20
 memorizedHello();
 
 // We may also cache (all time) hello function with debouncing.
-const memorizedHello = memee(hello, {},{ debounced: true, wait: 2000, result: callback });
+const memorizedHello = memee(hello, {}, { debounced: true, wait: 2000, result: callback });
 ```
 
 

@@ -29,8 +29,6 @@ const initMemoize = (maxAge) => {
   debounce.wait = isNaN(parseInt(wait, 10)) ? 0 : wait;
   memoize.maxAge = isNaN(parseInt(maxAge, 10)) ? 0 : maxAge;
   if (memoize.maxAge <= debounce.wait) memoize.maxAge = debounce.wait + 50;
-  console.log("maxage : ", memoize.maxAge);
-  console.log('wait : ', debounce.wait);
 }
 
 const initDebounce = (isDebounced, wait) => {
