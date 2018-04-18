@@ -42,7 +42,7 @@ const helloPromise = () => {
 }
 
 // Caching the promise with memee.
-const memorizedHello= memee(helloPromise);
+const memorizedHello = memee(helloPromise);
 
 // First call, perform work and cache.
 memorizedHello().then(resultA => {
