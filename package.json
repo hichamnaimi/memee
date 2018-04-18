@@ -1,10 +1,11 @@
 {
   "name": "memee",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Javascript package for memoizing functions. Returning directly the result of function if it was called with the same arguments avoiding it's redundant work.",
-  "main": "main.js",
+  "main": "./dist/memee.js",
   "homepage": "https://github.com/hichamnaimi/memee#readme",
   "scripts": {
+    "compile": "./node_modules/.bin/babel  ./src --experimental --source-maps-inline -d ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -28,7 +29,8 @@
     "email": "hicham.naimi.hn@gmail.com"
   },
   "license": "MIT",
-  "dependencies": {
-    "esm": "^3.0.19"
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }

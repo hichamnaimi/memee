@@ -1,6 +1,6 @@
 // Memoization functionalities
-import { globals } from './globals.mjs'
-import { debounceParams } from './debounce.mjs';
+import { globals } from './globals.js'
+import { debounceParams } from './debounce.js';
 
 const memoizeParams =  {
   cache: {},

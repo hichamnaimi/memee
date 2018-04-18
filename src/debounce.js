@@ -1,6 +1,6 @@
 // debounce functionalities
-import { globals } from './globals.mjs'
-import { memoize, getMemoizedResults } from './memoize.mjs'
+import { globals } from './globals.js'
+import { memoize, getMemoizedResults } from './memoize.js'
 
 const debounceParams = {
   isDebounced : false,

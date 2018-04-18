@@ -1,6 +1,6 @@
-import { globals, initGlobals } from './globals.mjs'
-import { initDebounce, debounce } from './debounce.mjs'
-import { initMemoize, memoize, getMemoizedResults } from './memoize.mjs'
+import { globals, initGlobals } from './globals.js'
+import { initDebounce, debounce } from './debounce.js'
+import { initMemoize, memoize, getMemoizedResults } from './memoize.js'
 
 const memee = (callback, { maxAge = 0 } = {}, { debounced = false, wait = 0, result = () => {} } = {}) => {
   // init globals
@@ -18,4 +18,4 @@ const memee = (callback, { maxAge = 0 } = {}, { debounced = false, wait = 0, res
   };
 }
 
-export default memee;
+module.exports = memee;
