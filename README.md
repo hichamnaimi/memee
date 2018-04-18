@@ -10,7 +10,7 @@ $ npm i -g npm
 $ npm i --save memee
 ```
 
-###Using memee
+### Using memee
 
 Always caching the function until we close the application.
 ```javascript
