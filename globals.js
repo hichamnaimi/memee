@@ -2,7 +2,19 @@
 const globals = {
   args: null,
   callback: null,
-  result: null
+  result: null,
+  memoize: {
+    cache: {},
+    queueOfCleaners: [],
+    callbackName: null,
+    maxAge: null
+  },
+  debounce: {
+    isDebounced : false,
+    timeout: null,
+    wait: 0
+  }
+
 }
 
 const initGlobals = (callback, result) => {
@@ -10,7 +22,7 @@ const initGlobals = (callback, result) => {
   globals.result = result;
 }
 
-export {
+module.exports = {
   globals,
   initGlobals
 }
